@@ -1,6 +1,4 @@
-# blank
-
-pushsilex
+# pushsilex
 
 Pushbullet integration with Silex
 
