@@ -2,7 +2,7 @@
 
 pushsilex
 
-Pushbullet integration within Silex
+Pushbullet integration with Silex
 
 ## Usage
 
