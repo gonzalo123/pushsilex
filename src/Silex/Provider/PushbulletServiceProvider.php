@@ -11,7 +11,6 @@ class PushbulletServiceProvider implements ServiceProviderInterface
 
     const URI = 'https://api.pushbullet.com/v2/pushes';
     const NOTE = 'note';
-    const LINK = 'link';
 
     public function __construct($accessToken)
     {
@@ -21,7 +20,7 @@ class PushbulletServiceProvider implements ServiceProviderInterface
     public function register(Application $app)
     {
         $app['pushbullet.note'] = $app->protect(function ($title, $body) {
-            return $this->push('note', $title, $body);
+            return $this->push(self::NOTE, $title, $body);
         });
     }
 
